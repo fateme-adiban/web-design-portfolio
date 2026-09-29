@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
     images: [
       {
-        url: "/readme-img.png",
+        url: "/og-image.png.png",
         width: 1200,
         height: 630,
         alt: "Fateme Adiban — Freelance Web Designer"
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Fateme Adiban — Freelance Web Designer",
     description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
-    images: ["/readme-img.png"]
+    images: ["/og-image.png.png"]
   }
 }
 
