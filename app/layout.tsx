@@ -28,7 +28,27 @@ const albertSans = Albert_Sans({
 
 export const metadata: Metadata = {
   title: "Fateme Adiban — Freelance Web Designer",
-  description: "I help personal brand coaches build websites that look like them, build trust, and turn visitors into clients."
+  description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
+
+  openGraph: {
+    title: "Fateme Adiban — Freelance Web Designer",
+    description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
+    images: [
+      {
+        url: "/readme-img.png",
+        width: 1200,
+        height: 630,
+        alt: "Fateme Adiban — Freelance Web Designer"
+      }
+    ]
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Fateme Adiban — Freelance Web Designer",
+    description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
+    images: ["/readme-img.png"]
+  }
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
