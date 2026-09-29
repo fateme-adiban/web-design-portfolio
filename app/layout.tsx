@@ -33,6 +33,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fateme Adiban — Freelance Web Designer",
     description: "I help personal branding strategists build websites that look like them, build trust, and turn visitors into clients.",
+    siteName: "Fateme Adiban",
+    type: "website",
     images: [
       {
         url: "/og-image.png",
