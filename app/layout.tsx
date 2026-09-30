@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Patrick_Hand_SC, Instrument_Serif, Albert_Sans, Patrick_Hand } from "next/font/google"
+import ClarityAnalytics from "./Clarity"
 import "./globals.css"
 
 const patrickHand = Patrick_Hand({
@@ -56,7 +57,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${patrickHandSC.variable} ${instrumentSerif.variable} ${albertSans.variable} ${patrickHand.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ClarityAnalytics />
+        {children}
+      </body>
     </html>
   )
 }

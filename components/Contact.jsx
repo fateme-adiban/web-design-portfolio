@@ -1,3 +1,10 @@
+"use client"
+import Clarity from "@microsoft/clarity"
+
+const handleDMClick = () => {
+  Clarity.event("dm_me_click")
+}
+
 const benefits = ["A strategy session to clarify your audience, offer, and message.", "A custom website built around your personal brand.", "Conversion-focused page structure and messaging refinement.", "Responsive development for desktop, tablet, and mobile.", "A polished launch with handoff guidance."]
 
 export default function Contact() {
@@ -29,7 +36,7 @@ export default function Contact() {
           <p>You’ve built a personal brand worth paying attention to. Now let’s give it a digital home that reflects your expertise and helps the right people take the next step.</p>
         </div>
 
-        <a href="https://www.linkedin.com/in/fateme-adiban/" target="_blank" rel="noopener noreferrer" className="contact-cta">
+        <a onClick={handleDMClick} href="https://www.linkedin.com/in/fateme-adiban/" target="_blank" rel="noopener noreferrer" className="contact-cta">
           DM me "Website"
         </a>
       </div>
